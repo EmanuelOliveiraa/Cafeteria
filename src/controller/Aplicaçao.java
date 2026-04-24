@@ -1,4 +1,6 @@
-package Cafe;
+package controller;
+import entidade.*;
+
 import java.util.*;
 
 
@@ -6,7 +8,6 @@ public class Aplicaçao {
 	static Scanner input = new Scanner(System.in);
 	
 	//arraylist dos abjetos
-	static ArrayList<Cafeteria> cafeterias = new ArrayList<Cafeteria>();
 	static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 	static ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
 	static ArrayList<Pagamento> pagamentos = new ArrayList<Pagamento>();
@@ -14,8 +15,7 @@ public class Aplicaçao {
 	static ArrayList<RegistroDeVenda> registroDeVendas = new ArrayList<RegistroDeVenda>();
 	
 	//objetos tipo cafeteria
-	static Cafeteria cafeteria1 = new Cafeteria();
-	static Cafeteria cafeteria2 = new Cafeteria();
+
 	
 	//objetos tipo cliente
 	static Cliente carol = new Cliente();
@@ -38,15 +38,7 @@ public class Aplicaçao {
 	static RegistroDeVenda registrodevenda2 = new RegistroDeVenda();
 	
 	
-	public static void novaCafeteria(Cafeteria cafeteria) {
-		System.out.println("-----NOVA CAFETERIA-----");
-		System.out.println("Escreva o nome da nova cafeteria: ");
-		cafeteria.nome = input.nextLine();
-		System.out.println("Escreva o local da caferia");
-		cafeteria.local = input.nextLine();
-		//cafeteria.funcionario.nome = input.nextLine();
-		//cafeteria.registrodevendas 		
-	}
+
 	
 	
 	
