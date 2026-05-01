@@ -1,18 +1,16 @@
 package entidade;
 
-public class RegistroDeVenda {
-	private int codigoVenda;
+public class RegistroDeVenda extends Pagamento {
+	private int idRegistro;
 	private String data;
-	private Funcionario funcionario;
-	private Cliente cliente;
-	private Pedido pedidos;
+
 
 	public int getCodigoVenda() {
-		return codigoVenda;
+		return idRegistro;
 	}
 
-	public void setCodigoVenda(int codigoVenda) {
-		this.codigoVenda = codigoVenda;
+	public void setCodigoVenda(int idRegistro) {
+		this.idRegistro = idRegistro;
 	}
 
 	public String getData() {
@@ -23,27 +21,4 @@ public class RegistroDeVenda {
 		this.data = data;
 	}
 
-	public Funcionario getFuncionario() {
-		return funcionario;
-	}
-
-	public void setFuncionario(Funcionario funcionario) {
-		this.funcionario = funcionario;
-	}
-
-	public Cliente getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
-	public Pedido getPedidos() {
-		return pedidos;
-	}
-
-	public void setPedidos(Pedido pedidos) {
-		this.pedidos = pedidos;
-	}
 }

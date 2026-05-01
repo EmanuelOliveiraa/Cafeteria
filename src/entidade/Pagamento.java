@@ -1,6 +1,6 @@
 package entidade;
 
-public class Pagamento {
+public class Pagamento extends Pedido{
 	private String tipoPagamento;
 	private String status;
 
@@ -12,13 +12,7 @@ public class Pagamento {
 		this.status = status;
 	}
 
-	public Cliente getCliente() {
-		return cliente;
-	}
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
 
 	Double valor;
 	Cliente cliente;

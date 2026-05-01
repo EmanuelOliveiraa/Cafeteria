@@ -1,18 +1,27 @@
 package entidade;
 
+import java.util.ArrayList;
+
 public class Pedido {
-	private int idPedidos;
+	private int idPedido;
 	private int quantidade;
 	private String item;
 	private Cliente cliente;
-	private Produto produto; //ele pode escolher varios produtos
+	private ArrayList<Produto> produtos = new ArrayList<>(); //ele pode escolher varios produtos
 
-	public int getNumeroPedidos() {
-		return idPedidos;
+	public void setProduto(Produto produto){
+		produtos.add(produto);
 	}
 
-	public void setNumeroPedidos(int idPedidos) {
-		this.idPedidos = idPedidos;
+	public ArrayList<Produto> getProdutos(){
+		return produtos;
+	}
+	public int getIdPedido() {
+		return idPedido;
+	}
+
+	public void setIdPedido(int idPedido) {
+		this.idPedido = idPedido;
 	}
 
 	public int getQuantidade() {
@@ -38,4 +47,6 @@ public class Pedido {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
+
 }

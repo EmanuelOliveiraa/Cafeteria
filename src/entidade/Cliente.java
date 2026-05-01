@@ -2,8 +2,8 @@ package entidade;
 
 public class Cliente {
 	private String nome;
+	private String cpf;
 	private int idCliente;
-	private Pedido pediodos;
 
 	public int getIdCliente() {
 		return idCliente;
@@ -13,19 +13,19 @@ public class Cliente {
 		this.idCliente = idCliente;
 	}
 
-	public Pedido getPediodos() {
-		return pediodos;
-	}
-
-	public void setPediodos(Pedido pediodos) {
-		this.pediodos = pediodos;
-	}
-
 	public String getNome() {
 		return nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 }

@@ -16,6 +16,7 @@ public class controllerProduto{
         produto.setIdProduto(input.nextInt());
         System.out.print("Escreva o preco: ");
         produto.setPreco(input.nextDouble());
+        input.nextLine();
         System.out.print("Escreva a descricao do produto: ");
         produto.setDescricao(input.nextLine());
         produtos.add(produto);
@@ -35,10 +36,15 @@ public class controllerProduto{
 
     public void listarProdutos(){
         int i = 0;
+        System.out.println("-----------LISTA DE PRODUTOS-----------: ");
         for(Produto produto : produtos){
             System.out.print(i + ". ");
             mostrarProduto(produto);
             i++;
         }
     }
+    public Produto getProduto(int index){
+        return produtos.get(index);
+    }
+
 }
